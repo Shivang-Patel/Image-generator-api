@@ -17,7 +17,7 @@ CORS(app)
 
 
 
-@app.route('/generate-image', methods=['POST'])
+@app.route('/generate-image', methods=['GET', 'POST'])
 def generate_image():
     # Get the input prompt from the request body
     data = request.json
